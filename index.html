@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">اسمي</div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#skills">مهاراتي</a></li>
+            <li><a href="#contact">تواصل</a></li>
+        </ul>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>مرحباً، أنا <span class="highlight">اسمك</span></h1>
+            <p>مطور ويب | مصمم واجهات | مبرمج</p>
+            <a href="#contact" class="btn">تواصل معي</a>
+        </div>
+    </section>
+
+    <!-- قسم عني -->
+    <section id="about" class="section">
+        <h2 class="section-title">عني</h2>
+        <div class="about-content">
+            <p>أنا مطور ويب شغوف بإنشاء مواقع عصرية وسريعة. أحب تعلم التقنيات الجديدة وبناء مشاريع تفيد الناس.</p>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="section gray">
+        <h2 class="section-title">مهاراتي</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>React</h3>
+                <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="section">
+        <h2 class="section-title">تواصل معي</h2>
+        <form class="contact-form" onsubmit="sendMessage(event)">
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="5" required></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة - اسمك</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                                              </html>
